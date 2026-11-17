@@ -4,3 +4,4 @@ class TrialInput(BaseModel):
     request_set_id:int=Field(gt=0)
     max_delay_ms:int=Field(default=100,ge=0,le=3600000)
     sticky_ms:int=Field(default=500,ge=0,le=3600000)
+    cache_ttl_ms:int=Field(default=1000,ge=0,le=86400000)
